@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb97c5625d22a7429b029f931a508d9, type: 3}
+  m_Name: secondCard
+  m_EditorClassIdentifier: 
+  name: Jennifer, the arcane Strategist
+  description: Don't be fooled by this woman's beauty. She is a master of magic who
+    has lived for over 300 years.
+  type: Human Mage
+  artwork: {fileID: 0}
+  cost: 2
+  attack: 2
+  defense: 2
+  effects:
+  - flying()
+  - hitWall(2)
