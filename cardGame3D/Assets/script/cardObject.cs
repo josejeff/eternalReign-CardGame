@@ -19,6 +19,7 @@ public class cardObject : MonoBehaviour
     [SerializeField] private bool isFaceUp;
     private bool currentFace;
 
+
     // Start is called before the first frame update
     void Start(){
         background.sprite = cardBack;
@@ -67,18 +68,20 @@ public class cardObject : MonoBehaviour
 
         }
     }
-
+    
     public void flipCard(){
         isFaceUp = !isFaceUp;
     }
 
-    public void onClick(){
-        if(activeCard != null){
-            activeCard.inHandUI.SetActive(false);
-        }
+    public void enhanceView(){
         if(this.transform.parent.name == "playerHand"){
-            activeCard = this;
-            inHandUI.SetActive(true);
+            this.transform.localScale = new Vector3(1.4f,1.4f,1);
+        }
+    }
+
+    public void normalView(){
+        if(this.transform.parent.name == "playerHand"){
+            this.transform.localScale = new Vector3(1,1,1);
         }
     }
 }

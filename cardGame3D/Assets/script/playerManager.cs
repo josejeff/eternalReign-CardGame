@@ -25,7 +25,7 @@ public class playerManager : MonoBehaviour
         if (cardsToDraw > 0){
             if (cardsToDraw <= children.Length){
                 for(var i=0; i<cardsToDraw; i++){
-                    children[i].transform.parent = playerHand.gameObject.transform;
+                    children[i].transform.SetParent(playerHand.gameObject.transform, false);
                     children[i].transform.rotation = playerHand.transform.rotation;
                     children[i].flipCard();
                     
